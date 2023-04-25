@@ -45,11 +45,11 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'goerli'; // only goerli, polygon, or ethereum
+const CHAIN = 'ethereum'; // only goerli, polygon, or ethereum
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'BLOCKCHAINBOMBERS';
-const CONTRACT_SYMBOL = 'CB';
+const CONTRACT_SYMBOL = 'BB';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x566c1eEcfc3E94E785a1f9f0Aa1FebC93eC5AcF4';
 const TREASURY_ADDRESS = '0x566c1eEcfc3E94E785a1f9f0Aa1FebC93eC5AcF4';
@@ -66,7 +66,7 @@ const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the ro
 const ROYALTY_ADDRESS = "0x566c1eEcfc3E94E785a1f9f0Aa1FebC93eC5AcF4"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the prereveal token uri
-const PRESALE_WHITELISTED_ADDRESSES = ["0x566c1eEcfc3E94E785a1f9f0Aa1FebC93eC5AcF4"]; // only update if you want to manually set the whitelisted addresses
+const PRESALE_WHITELISTED_ADDRESSES = []; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
 let CONTRACT_ADDRESS = "0x89dD847B893B54e992a2B63ce7527CC16177577D"; // If you want to manually include it
